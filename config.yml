@@ -1,4 +1,3 @@
-production_url: 'http://www.rdaregistry.info'
 base_path: "/"
 # Tell ruhoh which folder will model the "theme"
 "theme-bootstrap-2" :
