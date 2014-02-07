@@ -1,7 +1,5 @@
 production_url: 'http://www.rdaregistry.info'
 base_path: "/"
 # Tell ruhoh which folder will model the "theme"
-twitter-bootstrap-2 :
-  # Tells ruhoh which collection class to use for this folder.
-  # Here we use "theme" which makes this folder the theme.
-  use : "theme"
+"theme-bootstrap-2" :
+  "use" : "theme"
