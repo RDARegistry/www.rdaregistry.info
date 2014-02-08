@@ -12,35 +12,29 @@ docpadConfig =
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://website.com"
-
-      # Here are some old site urls that you would like to redirect from
-      oldUrls: [
-        'www.website.com',
-        'website.herokuapp.com'
-      ]
+      url: "http://test.rdaregistry.info"
 
       # The default title of our website
-      title: "Your Website"
+      title: "RDA Registry"
 
       # The website description (for SEO)
       description: """
-        When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+        This is the technical documentation for the Resource Description and Access (RDA) published vocabularies and element set.
         """
 
       # The website keywords (for SEO) separated by commas
       keywords: """
-        place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+        RDA, vocabularies, documentation, registry
         """
 
       # The website author's name
-      author: "Your Name"
+      author: "Jon Phipps"
 
       # The website author's email
-      email: "your@email.com"
+      email: "jonphipps+rdaregistry@gmail.com"
 
       # Your company's name
-      copyright: "© Your Company 2013"
+      copyright: "© American Library Association"
 
 
     # Helper Functions

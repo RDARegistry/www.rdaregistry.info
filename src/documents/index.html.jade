@@ -5,19 +5,77 @@ title: 'Home'
 
 // Main hero unit for a primary marketing message or call to action.
 .jumbotron
-  h1 Welcome to your new site!
-  p: :markdown
-    We've copied over the [Twitter Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) for you already, which is what you're currently viewing.
-    <br>
-    Step through the guide below and we'll walk you through the process of working with your first docpad website :-)
+  h2 Welcome to the RDA Element Vocabularies in GitHub
+  p
+    | As of January 2014 the RDA Element Vocabularies are available in published form in the namespace&nbsp;
+    a(href='http://rdaregistry.info') http&colon;&sol;&sol;rdaregistry&period;info
+    | &period; This new version of the elements has been
+    | extensively rearranged and updated to reflect recent decisions by the Joint Steering Committee for the Development
+    | of RDA &lpar;JSC&rpar;&period;
+  p
+    | The published vocabularies are currently available in several sets which reflect the underlying FRBR conceptual
+    | model&period; There is also a version for library and other users who prefer properties not constrained by FRBR&period; These
+    | &OpenCurlyQuote;unconstrained&rsquor; elements are in a separate set&comma; but they have the same internal relationships as the elements in
+    | the &OpenCurlyQuote;constrained&rsquor; sets&period; The links to the published element sets below will take you to a page that will provide direct access to various representations of each Element Set&period; The number of elements in each set is given in brackets&period;
+  ul
+    li
+      a(href='http://www.rdaregistry.info/Elements/c') Classes
+      | &nbsp;(8)
+    li
+      a(href='http://www.rdaregistry.info/Elements/w') Work properties
+      | &nbsp;&lpar;232&rpar;
+    li
+      a(href='http://www.rdaregistry.info/Elements/e') Expression properties
+      | &nbsp;&lpar;236&rpar;
+    li
+      a(href='http://www.rdaregistry.info/Elements/m') Manifestation properties
+      | &nbsp;&lpar;213&rpar;
+    li
+      a(href='http://www.rdaregistry.info/Elements/i') Item properties
+      | &nbsp;&lpar;54&rpar;
+    li
+      a(href='http://www.rdaregistry.info/Elements/a') Agent properties
+      | &nbsp;&lpar;226&rpar;
+    li
+      a(href='http://www.rdaregistry.info/Elements/u') Unconstrained properties
+      | &nbsp;&lpar;698&rpar;
 
-// Example row of columns.
+  p
+    | The HTML pages for each Element hosted at the Open Metadata Registry&comma; maintain a balance between human-friendly and machine-friendly identifiers&comma; so you will see a mix
+    | of identifiers with opaque numerics and more human readable labels&period; Documentation currently in preparation will
+    | provide more explanation for these decisions and their intended utility&period; Note that the constrained elements are
+    | related to their unconstrained versions so that data created in an RDA application can be re-used by a non-RDA
+    | application&period;
+  p
+    | If you discover a problem with the representations of the vocabularies&comma; or have a question&comma; or even wish to engage in a philosophical or practical discussion&comma; please&nbsp;
+    a(href='https://github.com/RDARegistry/RDA-Vocabularies/issues') raise an issue&excl;
 .row
   .col-md-6
-    h2 Docpad
-    p DocPad takes that good ol' simple approach of writing files and wraps it with the best modern innovations, providing an awesome intuitive, liberating and empowering solution for HTML5 web development.</p>
-    p: a.btn.btn-default(href="https://github.com/bevry/docpad") Visit Website
+    h3 What&rsquor;s different from the previous version&quest;
+    p
+      | The work on a draft version began in 2008&comma; and since then a significant amount of discussion and learning has
+      | occurred&period; The new RDA Vocabularies reflect that understanding&period;
+    p
+      | The draft version of the elements available at&nbsp;
+      a(href='http://rdvocab.info') http&colon;&sol;&sol;rdvocab&period;info
+      | &nbsp;were never
+      | officially published&comma; so those elements will be deprecated and users and applications redirected to the current
+      | official versions at&nbsp;
+      a(href='http://rdaregistry.info') http&colon;&sol;&sol;rdaregistry&period;info
+      | &period;
   .col-md-6
-    h2 Twitter Bootstrap
-    p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
-    p: a.btn.btn-default(href="http://twitter.github.com/bootstrap/") Visit Website
+    h3 What about the RDA value vocabularies&quest;
+    p
+      | The RDA Value Vocabularies agreed by the JSC are published in the original namespace at&nbsp;
+      a(href='http://rdvocab.info') http&colon;&sol;&sol;rdvocab&period;info
+      | &period; The JSC has no plans to move them to the new namespace&comma; but
+      | the situation will be reviewed in due course as part of the ongoing development of RDA documentation for users and
+      | application developers&period; Any changes will be carried out with minimum disruption and will not affect the semantics
+      | of the vocabulary concepts and terms&period;
+.row
+    h3 Next Steps
+    p
+      | The JSC&comma; Metadata Management Associates &lpar;MMA&rpar;&comma; and the American Library Association Publishing division will
+      | continue to collaborate on extensions and refinements of the RDA element sets and value vocabularies&period; Some
+      | additional functionality will be added to the RDA Vocabularies as improvements are made in the OMR software&period; We
+      | are always happy to discuss current and future requirements of users or potential users of the vocabularies&period;

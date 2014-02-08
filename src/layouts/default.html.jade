@@ -64,7 +64,7 @@ html(lang="en")
     nav.navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
-          a.navbar-brand(href="/") Welcome
+          a.navbar-brand(href="/") RDA Registry
         ul.nav.navbar-nav
           each doc in getCollection('pages').toJSON()
             - clazz = (document.url === doc.url) ? 'active' : null
@@ -74,7 +74,21 @@ html(lang="en")
       section#content.content!= content
       hr
       footer
-        div= site.copyright
+        div
+          a(rel='license', href='http://creativecommons.org/licenses/by/4.0/deed.en_US')
+            img(alt='Creative Commons License', style='border-width:0', src='http://i.creativecommons.org/l/by/4.0/88x31.png')
+          div
+              span(xmlns:dct='http://purl.org/dc/terms/', property='dct:title') The RDA Vocabularies
+              | &nbsp;by&nbsp;
+              a(xmlns:cc='http://creativecommons.org/ns#', href='http://www.rda-jsc.org/', property='cc:attributionName', rel='cc:attributionURL') The Joint Steering Committee for Development of RDA &lpar;JSC&rpar;
+              br
+              | is licensed under a&nbsp;
+              a(rel='license', href='http://creativecommons.org/licenses/by/4.0/deed.en_US') Creative Commons Attribution 4&period;0 International License
+              | &period;
+              br
+              | Based on a work at&nbsp;
+              a(xmlns:dct='http://purl.org/dc/terms/', href='http://rdaregistry.info', rel='dct:source') http&colon;&sol;&sol;rdaregistry&period;info
+              | &period;
         div(style="font-style:italic; font-size: 12px") This website was last updated at #{site.date}
 
     // Scripts
