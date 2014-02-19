@@ -75,6 +75,22 @@ docpadConfig =
     posts: (database) ->
       database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
 
+    # This one, will fetch in all documents that will be outputted to the posts directory
+    elements: (database) ->
+      database.findAllLive({relativeOutDirPath:'Elements'},[filename:1])
+
+# =================================
+# Server Configuration
+
+# Port
+# Use to change the port that DocPad listens to
+# By default we will detect the appropriate port number for our environment
+# if no environment port number is detected we will use 9778 as the port number
+# Checked environment variables are:
+# - PORT - Heroku, Nodejitsu, Custom
+# - VCAP_APP_PORT - AppFog
+# - VMC_APP_PORT - CloudFoundry
+  port: 9779  # default
 
   # DocPad Events
   # =============

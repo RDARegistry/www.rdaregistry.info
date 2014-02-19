@@ -5,7 +5,7 @@ pageOrder: 2
 ---
 
 nav.linklist
-  each doc in getCollection('posts').toJSON()
+  each doc in getCollection('elements').toJSON()
     li
       span= doc.date.toDateString()
       |  &raquo;&nbsp;
