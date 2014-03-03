@@ -1,7 +1,6 @@
 ---
-title: RDA Classes
+title: Canonical RDA Classes
 layout: page
 tags: ['Elements','Canonical']
 ---
 
-##Canonical **RDA Agents**

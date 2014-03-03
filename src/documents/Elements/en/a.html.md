@@ -1,7 +1,6 @@
 ---
 title: RDA Agents
 layout: page
-tags: ['Elements','English']
+language: English
 ---
 
-##English **RDA Agents**

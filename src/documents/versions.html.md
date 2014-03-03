@@ -1,6 +1,5 @@
 ---
-title: Canonical RDA Agents
+title: Versions and Releases
 layout: page
-tags: ['Elements','Canonical']
 ---
 

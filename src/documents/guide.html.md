@@ -1,5 +1,4 @@
 ---
-title: Frequently Asked Questions
+title: Usage Guide
 layout: page
 ---
-

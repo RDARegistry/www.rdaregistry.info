@@ -4,16 +4,17 @@ layout: default
 
 article#page.page
   h1= document.title
+  h2= document.language
   .page-content
     nav.linklist
-      if getCollection(document.folder)
-        each doc in getCollection(document.folder).toJSON()
-          .row
-            div.col-xs-2
-              a(href=doc.url)!= doc.title
-            div
-              | Last updated:&nbsp;
-              span= doc.date.toDateString()
+      if getCollection(languages)
+        each doc in getCollection(languages).toJSON()
+            .row
+              div.col-xs-2
+                a(href=doc.url)!= doc.title
+              div
+                | Last updated:&nbsp;
+                span= doc.date.toDateString()
       else
         p
         | #{document.empty}

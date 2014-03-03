@@ -9,11 +9,12 @@ article#page.page
       if getCollection(document.folder)
         each doc in getCollection(document.folder).toJSON()
           .row
-div.col-xs-2
-  a(href=doc.url)!= doc.title
+            div.col-xs-2
+              a(href=doc.url)!= doc.title
             div
               | Last updated:&nbsp;
               span= doc.date.toDateString()
       else
         p
         | #{document.empty}
+  .page-content!= content

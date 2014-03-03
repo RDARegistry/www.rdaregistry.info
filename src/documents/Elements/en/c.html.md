@@ -1,7 +1,6 @@
 ---
 title: RDA Classes
 layout: page
-tags: ['Elements','English']
+language: English
 ---
 
-##English **RDA Classes**
