@@ -4,10 +4,12 @@ layout: default
 
 article#page.page
   h1= document.title
+  if document.language
+  h2=document.language
   .page-content
     nav.linklist
-      if getCollection(document.folder)
-        each doc in getCollection(document.folder).toJSON()
+      if getCollection(document.relativeDirPath)
+        each doc in getCollection(document.relativeDirPath).toJSON()
           .row
             div.col-xs-2
               a(href=doc.url)!= doc.title

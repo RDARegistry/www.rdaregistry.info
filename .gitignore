@@ -6,3 +6,4 @@ out/
 .docpad.db
 src/files/vendor
 index.html
+out.gh

@@ -80,9 +80,13 @@ docpadConfig =
     posts: (database) ->
       database.findAllLive({relativeOutDirPath:'posts', pageOrder: $exists: false},[date:-1])
 
-    # This one, will fetch in all documents that will be outputted to the posts directory
-    elements: (database) ->
+    # This one, will fetch in all documents that will be outputted to the Elements directory
+    Elements: (database) ->
       database.findAllLive({relativeOutDirPath:'Elements', pageOrder: $exists: false},[filename:1])
+
+  # This one, will fetch in all documents that will be outputted to the Elements directory
+    'Elements/en': (database) ->
+      database.findAllLive({relativeOutDirPath:'Elements/en', pageOrder: $exists: false},[filename:1])
 
     languages: (database) ->
       database.findAllLive({language: $exists: true},[language:1])
